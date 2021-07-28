@@ -1,0 +1,8 @@
+C:\Users\beary\Desktop\Stuff\Coding\C#\StringGen\bin\Release\StringGen.exe
+C:\Users\beary\Desktop\Stuff\Coding\C#\StringGen\bin\Release\StringGen.pdb
+C:\Users\beary\Desktop\Stuff\Coding\C#\StringGen\obj\Release\StringGen.Form1.resources
+C:\Users\beary\Desktop\Stuff\Coding\C#\StringGen\obj\Release\StringGen.Properties.Resources.resources
+C:\Users\beary\Desktop\Stuff\Coding\C#\StringGen\obj\Release\StringGen.csproj.GenerateResource.cache
+C:\Users\beary\Desktop\Stuff\Coding\C#\StringGen\obj\Release\StringGen.csproj.CoreCompileInputs.cache
+C:\Users\beary\Desktop\Stuff\Coding\C#\StringGen\obj\Release\StringGen.exe
+C:\Users\beary\Desktop\Stuff\Coding\C#\StringGen\obj\Release\StringGen.pdb
