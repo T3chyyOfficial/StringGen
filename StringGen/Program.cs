@@ -7,6 +7,7 @@ namespace StringGen
 {
     static class Program
     {
+        [STAThreadAttribute]
         static void Main()
         {
             Application.EnableVisualStyles();

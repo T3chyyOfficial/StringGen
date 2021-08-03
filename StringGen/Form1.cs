@@ -61,13 +61,38 @@ namespace StringGen
 
         private void button1_Click(object sender, EventArgs e)
         {
-           int characterCount = Convert.ToInt32(Math.Round(numericUpDown1.Value, 0));
-           textBox1.Text = RString(characterCount);
+            try
+            {
+                int characterCount = Convert.ToInt32(Math.Round(numericUpDown1.Value, 0));
+                textBox1.Text = RString(characterCount);
+            } catch (Exception ex)
+            {
+                MessageBox.Show("ERROR: " + ex.Message + "\n\n" + ex.StackTrace, "StringGen", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start("https://github.com/T3chyyOfficial/StringGen");
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (textBox1.Text == "")
+                {
+                    MessageBox.Show("Nothing to copy!", "StringGen", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    Clipboard.SetText(textBox1.Text);
+                    MessageBox.Show("Copied to clipboard!", "StringGen", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            } catch (Exception ex)
+            {
+                MessageBox.Show("ERROR: " + ex.Message + "\n\n" + ex.StackTrace, "StringGen", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        } 
     }
 }
