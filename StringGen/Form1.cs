@@ -11,7 +11,9 @@ using System.Windows.Forms;
 namespace StringGen
 {
     /*
-     * Author: T3chyy
+     * Author: T3chyyOfficial
+     * 
+     * May 8th, 2022 @ 11:41 AM
      */
     public partial class Form1 : Form
     { 
@@ -36,7 +38,12 @@ namespace StringGen
                 chars += "0123456789";
             }
 
-            if(chars == "")
+            if (checkBox4.CheckState == CheckState.Checked)
+            {
+                chars += "!@#$%^&*()_-+=,./<>?:`~";
+            }
+
+            if (chars == "")
             {
                 MessageBox.Show("You must select a set of characters!", "StringGen", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -93,6 +100,12 @@ namespace StringGen
             {
                 MessageBox.Show("ERROR: " + ex.Message + "\n\n" + ex.StackTrace, "StringGen", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        } 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form2 form = new Form2();
+            form.Show();
+        }
     }
 }
